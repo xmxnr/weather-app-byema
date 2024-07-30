@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html 
+	 {
+		font-family: 'Rubik', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+			sans-serif;
+		box-sizing: border-box;
+	}
+
+	*::after,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	p,
+	ul {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	button {
+		font-family: inherit;
+		border: none;
+		cursor: pointer;
+	}
+
+/*Reusable Classes */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+}

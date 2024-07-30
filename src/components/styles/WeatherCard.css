@@ -1,0 +1,103 @@
+.card {
+	flex-direction: column;
+	max-width: 25em;
+	background-color: rgba(0, 0, 0, 0.726);
+	padding: 2em 1.5em;
+	border-radius: 2em;
+	color: white;
+	gap: 1.5rem;
+	.card__title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 1.5em;
+	}
+	.card__country {
+		font-size: 1em;
+		font-weight: 700;
+		text-align: center;
+	}
+	.card__body {
+		grid-template-columns: 3fr 4fr;
+		align-items: center;
+		.card__image {
+			filter: drop-shadow(0px 0px 10px white);
+		}
+	}
+	.card__temp {
+		text-align: center;
+		font-weight: 500;
+	}
+	.card__btn {
+		font-size: 1em;
+		font-weight: 600;
+		background-color: white;
+		color: black;
+		box-shadow: 0px 0px 5px 1px white;
+		padding: 0.6em 1.5em;
+		border-radius: 1em;
+		transition: all 0.5s;
+		margin-top: 5px;
+		&:hover {
+			color: white;
+			background-color: black;
+		}
+	}
+	.info {
+		gap: 1em;
+		.info__title {
+			font-size: 1em;
+			text-align: center;
+			font-weight: 500;
+			text-transform: capitalize;
+			&::after,
+			&::before {
+				content: '"';
+			}
+		}
+		.info__list {
+			gap: 0.5em;
+			.info__item {
+				font-size: 0.9em;
+				grid-template-columns: 3fr 3fr;
+				.info__label {
+					color: white;
+					margin-right: 0.5em;
+				}
+				.info__value {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	@media (width > 768px) {
+		& {
+			font-size: 1.2rem;
+		}
+	}
+
+	input {
+		border-radius: 10px;
+		border: 0;
+		text-align: center;
+		background-color: aliceblue;
+		margin: 0;
+    min-height: 25px;
+    box-shadow: 0px 0px 5px 1px white;
+	}
+
+	.button__search {
+		background-color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px white;
+    transition: all 0.6s;
+    font-family: 'Rubik',  Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    &:hover {
+      background-color: rgb(0, 0, 0);
+      color: azure;
+      cursor: pointer;
+    }
+	}
+}
